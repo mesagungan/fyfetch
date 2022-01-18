@@ -63,6 +63,7 @@ func main() {
 	fmt.Println("You are logged in as:", user.ID)
 	lol := client.Pause(context.Background())
 	fmt.Println(lol)
+	client.Play(context.Background())
 }
 
 func completeAuth(w http.ResponseWriter, r *http.Request) {
